@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 6, Figure 2</title>
+    </head>
+    <body>
+        <script>
+            var nums = parseInt(prompt("Enter A Number","08149583661"));
+        
+            function isnum (num) {
+                var myRegExp = /\d{10}/;
+                return (myRegExp.test(num));
+            }
+
+            
+            if (isnum(nums)) {
+                alert(nums +" is a Valid Phone Number");
+            } else {
+                alert(nums + " is an invalid Phone Number");
+            }
+        </script>
+    </body>
+</html>
